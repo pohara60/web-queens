@@ -1,0 +1,24 @@
+table.fixed {table-layout:fixed; width:110px;}/*Setting the table width is important!*/
+table.fixed td {overflow:hidden;}/*Hide text outside the cell.*/
+/*table.fixed td {width:36px;}/*Setting the width of column 1.*/
+table.fixed td {font-size:30px;}/*Setting the width of column 1.*/
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+	background: grey;
+}
+
+td {
+	text-align: right;
+    padding: 2px;
+    width: 36px;
+    height: 45px;
+}
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+	background: white;
+}
